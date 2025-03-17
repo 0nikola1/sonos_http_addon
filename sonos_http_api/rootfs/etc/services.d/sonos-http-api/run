@@ -1,0 +1,4 @@
+#!/usr/bin/with-contenv bashio
+echo "Starting Sonos HTTP API..."
+cd /app
+exec node server.js
