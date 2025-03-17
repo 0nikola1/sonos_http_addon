@@ -19,5 +19,4 @@ WORKDIR /app
 # Expose the default port
 EXPOSE 5005
 
-# Start the service using s6-overlay
-ENTRYPOINT  [ "/init" ]
+CMD [ "node", "server.js" ]
