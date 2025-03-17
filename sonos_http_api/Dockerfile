@@ -5,7 +5,7 @@ FROM $BUILD_FROM
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Install necessary packages
-RUN apk add --no-cache nodejs npm
+RUN apk add --no-cache git nodejs npm
 
 # Clone the Sonos HTTP API repository
 RUN git clone https://github.com/jishi/node-sonos-http-api.git /app
