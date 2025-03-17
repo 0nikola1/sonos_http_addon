@@ -1,4 +1,4 @@
-#!/usr/bin/with-contenv bashio
+#!/bin/bash
 
 # Start the Sonos HTTP API
 cd /app
