@@ -1,0 +1,13 @@
+name: Sonos HTTP API
+version: 1.0
+slug: sonos_http_api
+description: Control Sonos devices using the unofficial Sonos HTTP API.
+arch:
+  - aarch64
+  - amd64
+  - armv7
+startup: services
+boot: auto
+host_network: true
+options: {}
+schema: {}
