@@ -1,5 +1,5 @@
 name: Sonos HTTP API
-version: 1.0
+version: 1.1
 slug: sonos_http_api
 description: Control Sonos devices using the unofficial Sonos HTTP API.
 arch:
