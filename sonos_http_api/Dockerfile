@@ -18,4 +18,4 @@ WORKDIR /app
 EXPOSE 5005
 
 # Start the service using s6-overlay
-CMD [ "/init" ]
+ENTRYPOINT  [ "/init" ]
