@@ -1,0 +1,4 @@
+# https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
+name: Sonos dev addon
+url: 'https://github.com/0nikola1/sonos_http_addon/'
+maintainer: Dev <dev@.com>
