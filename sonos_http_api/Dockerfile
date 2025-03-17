@@ -11,9 +11,11 @@ RUN git clone https://github.com/jishi/node-sonos-http-api.git /app
 # Install dependencies
 RUN cd /app && npm install --production
 
+COPY rootfs/ / 
+
 WORKDIR /app
 # Expose the default port
 EXPOSE 5005
 
-# Start the add-on using run.sh
-CMD [ "/bin/bash", "/app/run.sh" ]
+# Start the service using s6-overlay
+CMD [ "/init" ]
