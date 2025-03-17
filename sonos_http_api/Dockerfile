@@ -17,4 +17,4 @@ WORKDIR /app
 # Expose the default port
 EXPOSE 5005
 
-CMD [ "tini", "--", "node", "server.js" ]
+CMD [ "bash", "-c", "node server.js --ip=$(bashio::config 'bind_ip')" ]
