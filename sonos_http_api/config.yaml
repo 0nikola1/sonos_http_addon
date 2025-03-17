@@ -7,6 +7,7 @@ arch:
   - amd64
   - armv7
 startup: services
+init: false
 boot: auto
 host_network: true
 options: {}
