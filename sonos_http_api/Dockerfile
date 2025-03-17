@@ -11,12 +11,10 @@ RUN git clone https://github.com/jishi/node-sonos-http-api.git /app
 # Install dependencies
 RUN cd /app && npm install --production
 
-COPY rootfs/ / 
 
-RUN chmod +x /etc/services.d/sonos-http-api/run
 
 WORKDIR /app
 # Expose the default port
 EXPOSE 5005
 
-CMD [ "node", "server.js" ]
+CMD [ "tini", "--", "node", "server.js" ]
